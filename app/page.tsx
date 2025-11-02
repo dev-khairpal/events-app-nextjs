@@ -1,64 +1,7 @@
 import EventCard from "@/components/EventCard";
 import ExploreBtn from "@/components/ExploreBtn";
+import { events } from "@/lib/constants";
 
-const events = [
-  {
-    image: "/event1.png",
-    title: "Hackathon Summit 2025",
-    location: "Bangalore, India",
-    date: "Nov 15, 2025",
-    time: "10:00 AM - 6:00 PM",
-  },
-  {
-    image: "/event2.png",
-    title: "Next.js Conf 2025",
-    location: "San Francisco, USA",
-    date: "Dec 1, 2025",
-    time: "9:00 AM - 5:00 PM",
-  },
-  {
-    image: "/event2.png",
-    title: "AI Developers Meetup",
-    location: "Pune, India",
-    date: "Nov 22, 2025",
-    time: "2:00 PM - 8:00 PM",
-  },
-  {
-    image: "/event1.png",
-    title: "Open Source India 2025",
-    location: "Hyderabad, India",
-    date: "Dec 10, 2025",
-    time: "9:30 AM - 4:30 PM",
-  },
-  {
-    image: "/event2.png",
-    title: "Frontend Dev Fest",
-    location: "Berlin, Germany",
-    date: "Jan 5, 2026",
-    time: "11:00 AM - 7:00 PM",
-  },
-  {
-    image: "/event1.png",
-    title: "Cloud Native Summit",
-    location: "Singapore",
-    date: "Jan 18, 2026",
-    time: "9:00 AM - 6:00 PM",
-  },
-  {
-    image: "/event2.png",
-    title: "Web3 Innovators Meetup",
-    location: "Mumbai, India",
-    date: "Feb 2, 2026",
-    time: "5:00 PM - 9:00 PM",
-  },
-  {
-    image: "/event1.png",
-    title: "Global Tech Expo 2026",
-    location: "Dubai, UAE",
-    date: "Feb 15–17, 2026",
-    time: "10:00 AM - 8:00 PM",
-  },
-];
 
 
 export default function Home() {
@@ -81,9 +24,10 @@ export default function Home() {
 
         {/* Featured Events */}
         <div className="mt-20">
-          <h3 className="text-3xl font-bold text-center mb-10">
+          <h3 className="text-5xl font-bold text-center mb-1">
             Featured Events
           </h3>
+<div className="w-36 lg:w-72 h-2 rounded-full mx-auto bg-gradient-to-r from-blue-400 via-green-500 to-purple-400 mb-10"></div>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
             {events.map((event) => (
