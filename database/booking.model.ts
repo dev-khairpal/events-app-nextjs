@@ -9,6 +9,7 @@ const bookingSchema = new Schema(
     },
     email: {
       type: String,
+      unique:true,
       required: [true, "Email is required."],
       trim: true,
       lowercase: true,

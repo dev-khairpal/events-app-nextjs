@@ -1,4 +1,4 @@
-import mongoose, { Schema, models } from "mongoose";
+import mongoose, { models, Schema } from "mongoose";
 
 const eventSchema = new Schema(
   {
@@ -77,7 +77,7 @@ const eventSchema = new Schema(
       },
     },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 const Event = models.Event || mongoose.model("Event", eventSchema);
